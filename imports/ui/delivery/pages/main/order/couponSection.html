@@ -1,0 +1,22 @@
+<template name="couponSection">
+    <div class="card couponSection">
+        <div class="card-content card-content-padding">
+            <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">优惠卷</div>
+                  <div class="item-input-wrap display-flex align-items-center">
+                    <select name="coupons" class="couponSelect">
+                      <option selected disabled value = "无">
+                        请选择优惠卷
+                      </option>
+                      <option value="无">无</option>
+                      {{#each coupons}}
+                        <option value="{{couponValue}}">{{coupon.name}} (-{{coupon.discount}}$)</option>
+                      {{/each}}
+                    </select>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</template>

@@ -1,0 +1,51 @@
+<template name="adminEditItemModal">
+  <div class="modal" id="adminEditItemModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">编辑菜品</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{#with dish}}
+            <form class="form">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="dishName" class="bmd-label-floating">菜名</label>
+                  <input type="text" value={{name}} class="form-control" id="editDishName">
+                </div>
+                <div class="form-group">
+                  <label for="dishPrice" class="bmd-label-floating">价格</label>
+                  <input type="number" value={{price}} class="form-control" id="editDishPrice">
+                </div>
+                <div class="form-group">
+                  <label for="dishIngredients" class="bmd-label-floating">配料(逗号隔开)</label>
+                  <input type="text" value={{ingredients}} class="form-control" id="editDishIngredients">
+                </div>
+                <div class="form-group">
+                  <label for="editDishSpicyLevel">辣度</label>
+                  <select class="form-control" id="editDishSpicyLevel">
+                    <option disabled value="辣度">选择辣度</option>
+                    <option selected={{spicyLevel "不辣"}} value="不辣">不辣</option>
+                    <option selected={{spicyLevel "小辣"}} value="小辣">小辣</option>
+                    <option selected={{spicyLevel "中辣"}} value="中辣">中辣</option>
+                    <option selected={{spicyLevel "大辣"}} value="大辣">大辣</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="dishNotes" class="bmd-label-floating">备注</label>
+                  <input type="text" value={{notes}} class="form-control" id="editDishNotes">
+                </div>
+              </div>
+            </form>
+          {{/with}}
+        </div>
+        <div class="modal-footer">
+          <div id="editItem" class="btn btn-primary">修改</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

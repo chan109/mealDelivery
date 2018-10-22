@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.513 56.023">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #23a6de;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Celebration_Holidays_basket-gift" data-name="Celebration &amp; Holidays_basket-gift" transform="translate(-1.5 -1.265)">
+    <g id="Group_54" data-name="Group 54" transform="translate(3 2.788)">
+      <rect id="Rectangle_489" data-name="Rectangle 489" class="cls-1" width="51.513" height="11.039" transform="translate(0 10.072)"/>
+      <path id="Path_215" data-name="Path 215" class="cls-1" d="M45.248,51.889H10.906A4.906,4.906,0,0,1,6,46.983V20H50.154V46.983A4.906,4.906,0,0,1,45.248,51.889Z" transform="translate(-2.32 1.111)"/>
+      <line id="Line_78" data-name="Line 78" class="cls-1" y2="31.889" transform="translate(20.851 21.111)"/>
+      <line id="Line_79" data-name="Line 79" class="cls-1" y2="31.889" transform="translate(30.663 21.111)"/>
+      <line id="Line_80" data-name="Line 80" class="cls-1" y2="11.039" transform="translate(18.398 10.072)"/>
+      <line id="Line_81" data-name="Line 81" class="cls-1" y2="11.039" transform="translate(33.116 10.072)"/>
+      <path id="Path_216" data-name="Path 216" class="cls-1" d="M24,12.86a9.455,9.455,0,0,1,7.359-9.812C39.44.846,41.848,13.35,24,12.86Z" transform="translate(1.754 -2.788)"/>
+      <path id="Path_217" data-name="Path 217" class="cls-1" d="M27.477,12.86a9.455,9.455,0,0,0-7.359-9.812C12.041.846,9.633,13.35,27.477,12.86Z" transform="translate(-0.511 -2.788)"/>
+    </g>
+  </g>
+</svg>

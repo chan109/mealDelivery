@@ -1,0 +1,161 @@
+/* body{
+  font-size: 12px;
+}
+
+h1{
+  font-size: 1.2em;
+  color: rbg(60, 60, 60);
+}
+
+p{
+  font-size: 1em;
+  color: rgb(100,100,100);
+} */
+
+.center{
+  text-align: center;
+}
+
+.home-food-add-button{
+  width: 20px;
+  height: 20px;
+}
+
+/* helper css */
+.home-walkaround-right-margin{
+  margin-right: 10px;
+}
+
+.home-walkaround-left-margin{
+  margin-left: 10px;
+}
+
+.home-walkaround-top-margin{
+  margin-top: 10px;
+}
+
+
+/* end helper css */
+
+.home-geo-bar{
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(35, 166, 222);
+}
+
+.home-advertisement-bar{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+.home-advertisement-bar img{
+  width: 100%;
+  height: 100%;
+}
+
+.home-time-navbar{
+  height: 10vh;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-time-navbar img{
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+.home-time-navbar .home-time-navbar-detail{
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.home-time-navbar .home-time-float-left-adjustment{
+  margin-left: 10px;
+}
+
+.home-time-navbar .home-time-float-right-adjustment{
+  margin-right: 10px;
+}
+
+.home-food-icon{
+  background-color: rgb(246, 246,246);
+  height: 20vh;
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-food-icon .home-food-img{
+  /* background-color: blue;  */
+  width: 85%; height: 84%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-food-detail{
+  background-color: rgb(246, 246,246);
+  height: 20vh;
+  /* border-bottom: 1px solid; */
+  border-bottom: 1px solid #ccc;
+}
+
+.home-food-detail p{
+  line-height: 5px;
+}
+
+.home-food-detail .home-food-subdetail{
+  margin-bottom: -3vh;
+}
+
+.home-food-detail-select-amount{
+  width: 40%;
+  margin-top: 6%;
+}
+
+.home-food-detail-select-amount p{
+  margin-top: 9px;
+  margin-right: 0;
+}
+
+.home-order-section{
+  position: fixed;
+  height: 2vh;
+  background-color: rgb(60,60,60);
+
+  bottom: 8%;
+  width: 100%;
+  height: 7%;
+
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.home-order-section h1{
+  font-size: 1em;
+  color: white;
+}
+
+.home-order-section .button{
+  color: white !important;
+  background-color: rgb(35, 166, 222);
+  height: 100% !important;
+}
+
+.home-order-section .col-70{
+  padding-left: 10px;
+}
+
+.home-order-section .col-30{
+  height: 100%;
+}

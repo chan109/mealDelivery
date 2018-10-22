@@ -1,0 +1,98 @@
+<template name='customerForm'>
+  <div class="data-table card">
+    <table>
+      <tbody>
+        <tr>
+          <td>订单号</td>
+          <td class="display-flex align-items-center">
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap display-flex align-items-center">
+                  <input style='width:67px;color:black;' type="text" name="time" value={{orderNumber}} readonly>
+                </div>
+              </div>
+            </div>
+            <p style="color: red;width:100%;text-align:right;">{{status}}</p>
+          </td>
+        </tr>
+        <tr>
+          <td>时间信息</td>
+          <td>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap display-flex align-items-center">
+                  <input type="text" name="time" value={{orderedDate}} readonly>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>送到</td>
+          <td>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap display-flex align-items-center">
+                  <input type="text" name="address" value={{address.name}} readonly>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        {{#with unitNumber}}
+          <tr>
+              <td>Unit#</td>
+              <td>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap display-flex align-items-center">
+                      <input type="text" name="address" value={{uNum}} readonly>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+        {{/with}}
+
+        {{#if expectedDate}}
+          <tr>
+              <td>配送时间段</td>
+              <td>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap display-flex align-items-center">
+                      <input type="text" name="address" value={{expectedDate}} readonly>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+        {{/if}}
+        <tr>
+          <td>电话</td>
+          <td>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap display-flex align-items-center">
+                  <input type="text" name="phoneNumber" value={{phone}} readonly>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>备注</td>
+          <td>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap display-flex align-items-center">
+                  <input type="text" name="notes" value={{notes}} readonly>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

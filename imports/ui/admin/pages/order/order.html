@@ -1,0 +1,38 @@
+<template name='adminOrder'>
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills nav-pills-warning" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                菜单
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                订单
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
+                送餐员
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content tab-space">
+            <div class="tab-pane active" id="link1">
+              {{>adminCalendar}}
+            </div>
+            <div class="tab-pane" id="link2">
+              {{>adminAllOrder}}
+            </div>
+            <div class="tab-pane" id="link3">
+              {{>adminAllRider}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

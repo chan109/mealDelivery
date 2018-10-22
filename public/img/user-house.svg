@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #23a6de;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Buildings-31" transform="translate(-1.5 -2.5)">
+    <path id="Path_243" data-name="Path 243" class="cls-1" d="M28.5,22a7.5,7.5,0,0,1-15,0" transform="translate(4.5 7.714)"/>
+    <path id="Path_244" data-name="Path 244" class="cls-1" d="M18,27.143a7.5,7.5,0,1,1-15,0L8.063,11.954A2.857,2.857,0,0,1,10.774,10H55.226a2.857,2.857,0,0,1,2.711,1.954L63,27.143a7.5,7.5,0,1,1-15,0" transform="translate(0 2.571)"/>
+    <path id="Path_245" data-name="Path 245" class="cls-1" d="M39,22a7.5,7.5,0,0,1-15,0" transform="translate(9 7.714)"/>
+    <path id="Path_246" data-name="Path 246" class="cls-1" d="M6,27V51.286a2.857,2.857,0,0,0,2.857,2.857H54.571a2.857,2.857,0,0,0,2.857-2.857V27" transform="translate(1.286 9.857)"/>
+    <path id="Path_247" data-name="Path 247" class="cls-1" d="M9,11.143V6.857A2.857,2.857,0,0,1,11.857,4H49a2.857,2.857,0,0,1,2.857,2.857v4.286" transform="translate(2.571)"/>
+    <path id="Path_248" data-name="Path 248" class="cls-1" d="M24,50.571V32H41.143V50.571" transform="translate(9 12)"/>
+    <path id="Path_249" data-name="Path 249" class="cls-1" d="M24.286,32v8.571H10V32" transform="translate(3 12)"/>
+  </g>
+</svg>

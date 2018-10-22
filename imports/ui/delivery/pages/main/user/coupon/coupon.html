@@ -1,0 +1,29 @@
+<template name="coupon">
+  <div class="list">
+    <ul>
+      {{#if hasCoupon}}
+        {{#each coupons}}
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">
+                {{#with couponData}}
+                  <div class="item-header">{{name}}</div>
+                  <div class="item-footer">${{discount}}</div>
+                {{/with}}
+              </div>
+              {{#if isUsed}}
+                <div class="item-after">已使用</div>
+              {{else}}
+                <div class="item-after">未使用</div>
+              {{/if}}
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      {{else}}
+      <h4>暂无优惠券</h4>
+      {{/if}}
+    </ul>
+  </div>
+</template>

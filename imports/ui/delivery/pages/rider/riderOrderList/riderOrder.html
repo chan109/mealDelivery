@@ -1,0 +1,111 @@
+<template name='riderOrders'>
+  {{#with order}}
+  <div class="card" style="font-size:12px;">
+    <div class="card-content card-content-padding row display-flex align-items-center riderOrders" style="padding-left: 10px;">
+      <div class="col-80">
+        <label>订单编号: {{orderNumber}} </label>
+      </div>
+    </div>
+
+    <div class="riderOrders row no-gap display-flex align-items-center" style="font-size: 13px; height: 20px; margin-bottom: 3px;">
+        <div class="col-60 center" style="text-align: left; padding-left: 10px;">
+          <label for="">订单日期:</label>
+          <p style="display:inline-block" class="answer-field">
+            {{orderedDate}}
+          </p>
+        </div>
+        <div class="col-40"></div>
+      </div>
+
+    {{#if expectedDate}}
+      <div class="riderOrders row no-gap display-flex align-items-center" style="font-size: 13px; height: 20px; margin-bottom: 3px;">
+          <div class="col-60 center" style="text-align: left; padding-left: 10px;">
+            <label for="">用户期待收餐时间:</label>
+            <p style="display:inline-block" class="answer-field">
+              {{expectedDate}}
+            </p>
+          </div>
+          <div class="col-40"></div>
+        </div>
+    {{/if}}
+
+    <div class="riderOrders row no-gap display-flex align-items-center" style="font-size: 13px; height: 20px;">
+      <div class="col-50 center" style="text-align: left; padding-left: 10px;">
+        <label for="">发单时间:</label>
+        <p style="display:inline-block" class="answer-field">
+          {{orderedAt}}
+        </p>
+      </div>
+
+      <div class="col-50">
+        {{#with deliveredAt}}
+          <label for="">结单时间:</label>
+          <p style="display:inline-block" class="answer-field">
+            {{time}}
+          </p>
+        {{/with}}
+      </div>
+    </div>
+
+    <div class="card-content row no-gap display-flex align-items-center" style="font-size: 13px; margin-left:3%;">
+      <div class="col-80">
+        <label for="">用户电话:</label>
+        <p style="display:inline-block" class="answer-field">
+          {{userPhone}}
+        </p>
+      </div>
+      <div class="col-20">
+        <!-- <p class="answer-field" style="display:inline-block">1.3km</p>送货 -->
+      </div>
+    </div>
+
+    {{#with unitNumber}}
+    <div class="card-content">
+      <p style="margin-left:10px; margin-bottom:3px;font-size:1em;"> Unit#: <span style="color: red;">{{uNum}}</span></p>
+    </div>
+    {{/with}}
+
+    <div class="card-content google-redirect row no-gap display-flex align-items-center" style="margin-left:10px;">
+      <div class="col-80">
+        <!-- 1234 ubc street, Vancouver, Canada -->
+        地址: <a href="{{order.address.url}}">{{address.name}}</a>
+      </div>
+      <div class="col-20">
+        <!-- <p class="answer-field" style="display:inline-block">1.3km</p>送货 -->
+      </div>
+
+    </div>
+
+    <div class="card-content google-redirect row no-gap display-flex align-items-center" style="margin-left:3%;">
+      <div class="col-80">
+        <p style="display:inline-block" class="answer-field">
+          备注 {{notes}}
+        </p>
+      </div>
+      <div class="col-20">
+        <!-- <p class="answer-field" style="display:inline-block">1.3km</p>送货 -->
+      </div>
+    </div>
+
+    <div class="card-content row no-gap riderOrders " style="font-size: 13px; margin-left:3%;">
+      <div class="col-20 display-flex align-items-center" style="height:42px;">
+        <h4 style="display: inline-block;width: 60px;">应付货款:</h4>
+      </div>
+      <div class="col-80 display-flex align-items-center right" style="height:42px;padding-left:6px;">
+        <!-- <p style="width: 93%;text-align: right;">
+          <img src="img/riderRocket.png" alt="">
+        </p> -->
+        <p style="display:inline-block;" class="answer-field">${{price}} 现金支付</p>
+      </div>
+    </div>
+    {{#if isNotFinished}}
+    <div class="card-content card-content-padding row display-flex align-items-center">
+      <div class="col-60"></div>
+      <div class="col-40">
+        <button class="button button-fill color-red complete-order">完成订单</button>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+  {{/with}}
+</template>

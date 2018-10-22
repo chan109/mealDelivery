@@ -1,0 +1,40 @@
+<template name='orderDetailFinal'>
+    <div class="card data-table orderDetailFinal">
+        <table>
+            <tbody>
+              <tr>
+                <td>商品小计</td>
+                <td></td>
+                <td>${{orderDetailFinal.priceBeforeTax}}</td>
+              </tr>
+              <tr>
+                <td>配送费</td>
+                <td></td>
+                <td>${{orderDetailFinal.deliveryFee}}</td>
+              </tr>
+              <tr>
+                <td>GST (5%)</td>
+                <td></td>
+                <td>${{orderDetailFinal.tax}}</td>
+              </tr>
+              <tr>
+                <td>优惠</td>
+                <td></td>
+                <td>${{orderDetailFinal.discount}}</td>
+              </tr>
+              <tr>
+                <td>小费</td>
+                <td></td>
+                <td>${{orderDetailFinal.tipsAmount}}</td>
+              </tr>
+              <tr style="background-color: #676060; color: white;">
+                <td><h1>实付</h1></td>
+                <td style="border-left: 3px solid #676060;border-right: 3px solid #676060;"></td>
+                <td>${{orderDetailFinal.finalTotalPrice}}</td>
+              </tr>
+              
+            </tbody>
+          </table> 
+    </div>
+  </template>
+  

@@ -1,0 +1,57 @@
+<template name="signup">
+  {{#if showShare}}
+    <div><h1 style="text-align: center;">正在使用分享的链接申请加入</h1></div>
+  {{/if}}
+    <form class="list" style="margin-top: 10px">
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <!-- <div class="item-title item-label" style="color:grey;">手机号</div> -->
+              <div class="item-input-wrap">
+                <select name="countryCode">
+                  <option value="+1" selected>加拿大 +1</option>
+                  <option value="+86">中国 +86</option>
+                </select>
+                <input type="tel" name="phone" placeholder="手机号">
+                <button type="button" id="sendVerificationCodeBtn" class="button col shizai-signup-msg-button">获取验证码</button>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <!-- <div class="item-title item-label">验证码</div> -->
+              <div class="item-input-wrap">
+                <input type="number" name="verificationCode" placeholder="验证码">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <!-- <div class="item-title item-label">密码</div> -->
+              <div class="item-input-wrap">
+                <input type="password" name="password" placeholder="密码">
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">邀请码</div>
+              <div class="item-input-wrap">
+                <input type="text" name="invitationCode" placeholder="邀请码">
+              </div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <button class="col button button-fill color-blue shizai-big-button">注册</button>
+      <a class="link external" href="/login" style="text-align: center;width: 100%;margin-top: 2rem;">登录已有账号</a>
+    </form>
+  </template>

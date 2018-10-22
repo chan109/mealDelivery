@@ -1,0 +1,40 @@
+<template name="user">
+    <div class="page" data-name="home">
+
+        <div class="page-content" style="height: 91%;">
+            <div class="row display-flex align-items-center user-login-section">
+                <img src="img/default-avatar.png" class="userIcon">
+                <a id="logoutBtn">登出</a>
+            </div>
+
+            <div class="row my-page-navbar">
+                <div class="col-25 coupon">
+                    <img src="img/user-money.svg" alt="">
+                    <p>优惠卷</p>
+                </div>
+                <div class="col-25 invite">
+                    <img src="img/user-reward.svg" alt="">
+                    <p>邀请有奖</p>
+                </div>
+                <div class="col-25 {{riderStatus}}">
+                    <img src="img/user-rider.svg" alt="">
+                    <p>{{riderInfo}}</p>
+                </div>
+                <!-- <div class="col-25 about">
+                    <img src="img/user-house.svg " alt=" ">
+                    <p>关于我们</p>
+                </div> -->
+            </div>
+
+            <div class="guanggao-banner ">
+                <h1>广告位banner</h1>
+            </div>
+
+            <div class="guanggao-banner ">
+                <img src="img/bg101.jpg " alt=" ">
+            </div>
+
+        </div>
+
+    </div>
+</template>

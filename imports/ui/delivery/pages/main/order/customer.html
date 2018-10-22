@@ -1,0 +1,70 @@
+<template name='customer'>
+  <div class="data-table card">
+      <table>
+        <tbody>
+          <tr>
+            <td>时间信息</td>
+            <td>
+              <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap display-flex align-items-center">
+                      <input type="text" name="time" value={{customerInfo.time}} >
+                    </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+              <td>送到</td>
+              <td>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap display-flex align-items-center">
+                        <input type="text" name="address" value={{customerInfo.address.formatted_address}}>
+                      </div>
+                  </div>
+                </div>
+              </td>
+          </tr>
+          {{#with unitNumber}}
+            <tr>
+              <td>Unit#</td>
+              <td>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap display-flex align-items-center">
+                      <input type="text" name="address" value={{uNum}} disabled>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          {{/with}}
+          <tr>
+              <td>电话</td>
+              <td>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap display-flex align-items-center">
+                        <input type="text" name="phoneNumber" value={{customerInfo.phoneNum}}>
+                      </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>备注</td>
+              <td>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap display-flex align-items-center">
+                        <input type="text" name="notes">
+                      </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</template>

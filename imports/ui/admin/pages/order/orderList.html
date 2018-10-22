@@ -1,0 +1,61 @@
+<template name="adminOrderList">
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-primary card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">assignment</i>
+              </div>
+              <h4 class="card-title">总订单列表</h4>
+            </div>
+            <div class="card-body">
+              <div class="material-datatables">
+                <table id="regionOrdersTable" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th>订单号码</th>
+                      <th>总价</th>
+                      <th>邮编</th>
+                      <th>地址</th>
+                      <th>用户电话</th>
+                      <th>状态</th>
+                      <th>下单时间</th>
+                      <th>详情</th>
+                      <th>取消</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{#each allOrders}}
+                    <tr>
+                      <td>{{orderNumber}}</td>
+                      <td>${{paidAmount}}</td>
+                      <td>{{address.postCode}}</td>
+                      <td id='displayAddressHelper'>{{address.name}}</td>
+                      <td>{{phone}}</td>
+                      <td>{{status}}</td>
+                      <td>{{orderedDate}}</td>
+                      <td class="td-actions">
+                        <div data-toggle='modal' data-target="#adminShowOrderDetail" class="viewOrder btn btn-info">
+                          <i class="material-icons">info</i>
+                        </div>
+                      </td>
+                      <td class="td-actions">
+                        <div class="cancelOrder btn btn-danger">
+                          <i class="material-icons">cancel</i>
+                        </div>
+                      </td>
+                    </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>adminShowOrderDetail}}
+</template>

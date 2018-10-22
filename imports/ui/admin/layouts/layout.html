@@ -1,0 +1,14 @@
+<template name="adminLayout">
+  {{#if currentUser}}
+    <div class="wrapper">
+      {{> Template.dynamic template=sidebar}}
+      <div class="main-panel">
+        {{> Template.dynamic template=top}}
+        {{> Template.dynamic template=main}}
+        {{> Template.dynamic template=bottom}}
+      </div>
+    </div>
+  {{else}}
+    <div>unauthorized</div>
+  {{/if}}
+</template>

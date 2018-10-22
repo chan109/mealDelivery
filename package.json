@@ -1,0 +1,54 @@
+{
+  "name": "shizai",
+  "private": true,
+  "scripts": {
+    "start": "MONGO_URL='mongodb://shizai:shizai2018@ds229918.mlab.com:29918/shizai' meteor run"
+  },
+  "eslintConfig": {
+    "extends": "@meteorjs/eslint-config-meteor",
+    "rules": {
+      "react/jsx-indent": 0,
+      "react/jsx-filename-extension": 0,
+      "no-underscore-dangle": 0,
+      "react/prop-types": 0,
+      "no-nested-ternary": 1,
+      "no-lonely-if": 0,
+      "no-shadow": 1,
+      "max-len": 1,
+      "func-names": 0,
+      "global-require": 0,
+      "comma-dangle": 0,
+      "eol-last": 0,
+      "object-curly-newline": 1,
+      "no-restricted-globals": 1,
+      "react/jsx-no-bind": 1,
+      "react/no-did-mount-set-state": 1,
+      "jsx-a11y/anchor-is-valid": 1,
+      "jsx-a11y/click-events-have-key-events": 1,
+      "meteor/no-session": 0,
+      "meteor/eventmap-params": 0
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.54",
+    "axios": "^0.18.0",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^2.0.1",
+    "framework7": "^3.0.7",
+    "meteor-node-stubs": "^0.4.1",
+    "query-string": "^6.1.0",
+    "simpl-schema": "^1.5.0",
+    "sweetalert2": "^7.25.6"
+  },
+  "devDependencies": {
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-meteor": "^4.2.0",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}

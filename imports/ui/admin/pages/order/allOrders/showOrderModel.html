@@ -1,0 +1,88 @@
+<template name="adminShowOrderDetail">
+  <div class="modal" id="adminShowOrderDetail" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">订单详情</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        {{#with orderDetail}}
+        <div class="modal-body">
+          <form class="form">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="dishName" class="bmd-label-floating">订单号码</label>
+                <h4>{{orderNumber}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishName" class="bmd-label-floating">下单时间</label>
+                <h4>{{orderedAt}}</h4>
+              </div>
+              <div class="form-group">
+                  <label for="dishName" class="bmd-label-floating">配送时间段</label>
+                  <h4>{{expectedDate}}</h4>
+                </div>
+              <div class="form-group">
+                <label for="dishName" class="bmd-label-floating">用户电话</label>
+                <h4>{{phone}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishName" class="bmd-label-floating">菜式</label>
+                <h4>
+                  {{#each orders}}
+                    <p>{{dishData.name}} ${{dishData.price}} x {{quantity}}</p>
+                  {{/each}}
+                </h4>
+              </div>
+              <div class="form-group">
+                  <label for="dishPrice" class="bmd-label-floating">优惠</label>
+                  <h4>{{discount.discount}}</h4>
+                </div>
+              <div class="form-group">
+                <label for="dishPrice" class="bmd-label-floating">GST(%5)</label>
+                <h4>{{tax}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishPrice" class="bmd-label-floating">小费</label>
+                <h4>{{tips}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishPrice" class="bmd-label-floating">总价</label>
+                <h4>{{paidAmount}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishIngredients" class="bmd-label-floating">支付方法</label>
+                <h4>{{paymentMethod}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishIngredients" class="bmd-label-floating">送餐员</label>
+                <h4>{{riderData.phone.number}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishNotes" class="bmd-label-floating">备注</label>
+                <h4>{{notes}}</h4>
+              </div>
+              <div class="form-group">
+                <label for="dishNotes" class="bmd-label-floating">送餐地址</label>
+                <a id='meteor-address-helper' href="">{{address.name}}</a>
+              </div>
+              {{#with unitNumber}}
+                <div class="form-group">
+                    <label for="dishNotes" class="bmd-label-floating">Unit#</label>
+                    <a href="">{{uNum}}</a>
+                </div>
+              {{/with}}
+            </div>
+          </form>
+        </div>
+        {{/with}}
+        <!-- <div class="modal-footer">
+            <button type="button" id="addItem" class="btn btn-primary">添加</button>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</template>

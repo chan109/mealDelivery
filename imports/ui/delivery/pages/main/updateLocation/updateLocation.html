@@ -1,0 +1,52 @@
+<template name = "updateLocation">
+    <form class="list">
+        <ul>
+
+          {{#if historyAddress}}
+          <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">历史订餐地址</div>
+                  <div class="item-input-wrap updateLocation-helper">
+                    <!-- <input type="text" value={{historyAddress.name}} name="streetName" placeholder="Street address"> -->
+                    <p style="color: grey;">{{historyAddress.name}}</p>
+                  </div>
+                  <button class="item-title item-label button button-fill" id='use-history-address'>使用历史订餐地址</button>
+                </div>
+              </div>
+            </li>
+          {{/if}}
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">街名</div>
+                <div class="item-input-wrap updateLocation-helper">
+                  <input type="text" id='pac-input' name="streetName" placeholder="Street address">
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">公寓号码</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="unit_number" placeholder="(Optional) Apartment number">
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="block block-strong row">
+            <div class="col"><button class="button button-fill convert-form-to-data color-blue" type='submit' href="#">确定</button></div>
+          </div>
+      </form>
+
+      <div class="map-container" style="position: absolute; left: -100%;">
+        {{> googleMap name="exampleMap" options=exampleMapOptions}}
+      </div>
+
+</template>  

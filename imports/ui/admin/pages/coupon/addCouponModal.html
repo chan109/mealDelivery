@@ -1,0 +1,35 @@
+<template name="adminAddCouponModal">
+  <div class="modal" id="adminAddCouponModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">添加优惠券</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form">
+            <div class="card-body">
+              <div class="form-group">
+                <label class="bmd-label-floating">名字</label>
+                <input type="text" class="form-control" id="couponName">
+              </div>
+              <div class="form-group">
+                <label class="bmd-label-floating">折扣(额度)</label>
+                <input type="number" class="form-control" id="couponDiscount">
+              </div>
+              <div class="form-group">
+                <label class="bmd-label-floating">优惠码</label>
+                <input type="text" class="form-control" id="couponCode">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div id="addCoupon" class="btn btn-primary">添加</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

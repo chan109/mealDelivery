@@ -1,0 +1,14 @@
+<template name="tipSection">
+  <div class="card tipsSection">
+      <div class="card-content card-content-padding">
+        <div class="row">
+          <div class="col-25">小费区</div>
+          <div class="col-25 center selectedTipsSection tipsSubSection default" value=10 >10%</div>
+          <div class="col-25 center tipsSubSection" value=15>15%</div>
+          <div class="col-25 center" style="background-color: white !important;color: black;">
+              <input class="tipsSubSectionTotal" type="text" name="tipsSubSectionTotal" value= "${{tipsAmountAndFinalTotalPrice.tipsAmount}}" style="width: 100%;text-align: right;height: 3vh;">
+          </div>
+        </div>
+      </div>
+    </div>
+</template>

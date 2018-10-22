@@ -1,0 +1,42 @@
+<template name = "existignOrders">
+    <div class="card">
+            <div class="card-header row no-gap display-flex align-items-center" style="font-size: 0.8rem;">
+                <div class="col-55">
+                    <!-- 2018/06/05 中午  -->
+                    {{orderedDate}}
+                </div>
+                <div class="col-30 click-helper" >
+                    <!-- #140877  -->
+                    #{{orderNumber}}
+                </div>
+                <div class="col-15" style="color: red;text-align: right;">
+                    <b>
+                        <!-- 派送中 -->
+                        {{status}}
+                    </b>
+                </div>
+            </div>
+            <div class="card-content card-content-padding click-helper">
+                <!-- 荷包蛋炒脆骨，农家小炒肉，香菇炖鸡套餐，回锅肉，可乐，肉燥面，卤猪蹄 -->
+                {{#each orders}}
+                    {{dishData.name}} x {{quantity}}
+                {{/each}}
+                {{#if maskedPhone}}
+                <p style="font-size: 0.7rem;margin-bottom: -10px;margin-top: 15px;color: grey;">送餐员联系电话: ***{{maskedPhone}}</p>
+                {{/if}}
+            </div>
+            <div class="card-footer row display-flex align-items-center">
+                <div class="col-50">
+                <p>
+                    <!-- 总计: $ 50 -->
+                    总计: $ {{paidAmount}}
+                </p>
+                </div>
+                <div class="col-20"></div>
+                <div class="col-30">
+                <!-- <button class="button button-fill color-blue cancel-order">取消订单</button> -->
+                </div>
+            </div>
+        </div>
+
+</template>

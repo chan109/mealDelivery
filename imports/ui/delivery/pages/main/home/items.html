@@ -1,0 +1,44 @@
+<template name="items">
+  {{#each foods}}
+  <div class="row no-gap" style="height:132px;">
+
+    <div class="col-35 home-food-icon" style="height:100%;">
+      <img src="{{dishData.imageUrl}}" class="home-food-img" alt="">
+    </div>
+
+    <div class="col-65 home-food-detail" style="height:100%;">
+
+      <div class="display-flex justify-content-space-between home-food-subdetail">
+        <h1>{{dishData.name}}</h1>
+        <p class="home-walkaround-right-margin home-walkaround-top-margin" style="line-height: normal;">库存 {{stock}}</p>
+      </div>
+
+      <p>配料： {{dishData.ingredients}}</p>
+      <p>辣度: {{dishData.spicyLevel}}</p>
+      <p>备注: {{dishData.notes}}</p>
+
+      <div class="display-flex justify-content-space-between" style="margin-top: -8px">
+        <h1 style="color: rgb(196,60,36);">$ {{dishData.price}}</h1>
+        <div class="row no-gap home-food-detail-select-amount">
+          {{#if orderedItems}}
+          <a href="#" class="col-30 center home-food-remove-one">
+            <img src='img/remove-order-button.png' class="home-food-add-button" alt="">
+          </a>
+          <p class="col-40 center home-food-ordered-amount">{{orderedItems}}</p>
+          <a href="#" class="col-30 center home-food-add-one">
+            <img src='img/add-order-button.png' class="home-food-add-button" alt="">
+          </a>
+          {{else}}
+          <a href="#" class="col-70"></a>
+          <a href="#" class="col-30 center home-food-add-one">
+            <img src='img/add-order-button.png' class="home-food-add-button" alt="">
+          </a>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+  <div style="width:100%;height:60px;"></div>
+</template>

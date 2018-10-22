@@ -1,0 +1,8 @@
+<template name="geoBar">
+  <div class="home-geo-bar display-flex align-items-center">
+    <p style="margin-left: auto;margin-right: auto;color: white;padding-left:10px;padding-right: 5px">{{location}}</p>
+  </div>
+  <div class="map-container" style="position: absolute; left: -100%;">
+    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+  </div>
+</template>

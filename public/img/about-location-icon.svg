@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.174 29.985">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #23a6de;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="map_and_locations_loacte" data-name="map and locations_loacte" transform="translate(-9 -1.662)">
+    <path id="Path_231" data-name="Path 231" class="cls-1" d="M28.674,11.749c0,7.331-9.628,16.257-9.587,19.4,0-3.141-9.587-12.031-9.587-19.4a9.587,9.587,0,1,1,19.174,0Z" transform="translate(0 0)"/>
+    <circle id="Ellipse_52" data-name="Ellipse 52" class="cls-1" cx="3.636" cy="3.636" r="3.636" transform="translate(15.451 8.336)"/>
+  </g>
+</svg>

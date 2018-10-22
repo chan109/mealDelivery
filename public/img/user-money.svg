@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.851 58.449">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #23a6de;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Finance_Shopping_currency-1" data-name="Finance &amp; Shopping_currency-1" transform="translate(0.5 -0.146)">
+    <g id="currency" transform="translate(1 2.095)">
+      <rect id="Rectangle_487" data-name="Rectangle 487" class="cls-1" width="61.851" height="43.027" transform="translate(0 11.973)"/>
+      <rect id="Rectangle_488" data-name="Rectangle 488" class="cls-1" width="51.094" height="32.27" transform="translate(5.378 17.352)"/>
+      <path id="Path_208" data-name="Path 208" class="cls-1" d="M13.067,15A8.067,8.067,0,0,1,5,23.067" transform="translate(0.378 2.352)"/>
+      <path id="Path_209" data-name="Path 209" class="cls-1" d="M44.067,23.067A8.067,8.067,0,0,1,36,15" transform="translate(11.06 2.352)"/>
+      <path id="Path_210" data-name="Path 210" class="cls-1" d="M36,41.067A8.067,8.067,0,0,1,44.067,33" transform="translate(11.06 8.554)"/>
+      <path id="Path_211" data-name="Path 211" class="cls-1" d="M5,33a8.067,8.067,0,0,1,8.067,8.067" transform="translate(0.378 8.554)"/>
+      <path id="Path_212" data-name="Path 212" class="cls-2" d="M19,14.068,50.108,2.1,54.34,13.714" transform="translate(5.202 -2.095)"/>
+      <path id="Path_213" data-name="Path 213" class="cls-1" d="M29.917,12.078,43.133,7.222l1.7,4.671" transform="translate(8.964 -0.328)"/>
+      <path id="Path_214" data-name="Path 214" class="cls-1" d="M27.932,23.811A3.6,3.6,0,0,0,24.8,21.934,3.228,3.228,0,0,0,23.92,28.3c6.424,2.208,4.1,7.37.946,7.4a4.126,4.126,0,0,1-3.822-2.056" transform="translate(5.907 4.741)"/>
+      <line id="Line_77" data-name="Line 77" class="cls-1" x2="0.081" y2="18.32" transform="translate(30.591 24.431)"/>
+    </g>
+  </g>
+</svg>

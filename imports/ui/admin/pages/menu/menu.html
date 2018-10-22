@@ -1,0 +1,46 @@
+<template name='adminMenu'>
+  <div class="content">
+    <div class="container-fluid">
+      <div class="btn btn-info btn-round" data-toggle="modal" data-target="#adminAddItemModal">
+        <i class="material-icons">add</i>添加菜品
+      </div>
+      <div class="row">
+        {{#each dishList}}
+        <div class="col-md-3">
+          <div class="card card-product">
+            <div class="card-header card-header-image dishImage" style="cursor:pointer;">
+              <img class="img" src={{imageUrl}}>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                {{name}}
+                <i class="material-icons editDishItem" style="font-size:16px; cursor:pointer;">edit</i>
+              </h4>
+              <div class="card-description">
+                配料：{{ingredients}}
+              </div>
+              {{#if notes}}
+              <div class="card-description">
+                备注：{{notes}}
+              </div>
+              {{/if}}
+            </div>
+            <div class="card-footer">
+              <div class="price">
+                <h4>${{price}}</h4>
+              </div>
+              <div class="stats">
+                <p class="card-category">
+                  {{spicyLevel}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  {{> adminAddItemModal}}
+  {{> adminEditItemModal}}
+</template>

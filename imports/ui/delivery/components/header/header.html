@@ -1,0 +1,37 @@
+<template name="header">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      {{#with showHomeHeader}}
+        {{> homeHeader}}
+      {{/with}}
+
+      {{#with showOrderDetailHeader}}
+        {{> orderDetailHeader}}
+      {{/with}}
+
+      {{#with showOrderHeader}}
+        {{> orderHeader}}
+      {{/with}}
+
+      {{#with showConfirmOrderHeader}}
+        {{> orderHeader}}
+      {{/with}}
+
+      {{#with showUserHeader}}
+        {{> orderHeader}}
+      {{/with}}
+
+      {{#with showLoginHeader}}
+        {{> loginHeader}}
+      {{/with}}
+
+      {{#with showRiderHeader}}
+        {{> genericHeader}}
+      {{/with}}
+
+      {{#with showSignupHeader}}
+        {{>loginHeader}}
+      {{/with}}
+    </div>
+  </div>
+</template>

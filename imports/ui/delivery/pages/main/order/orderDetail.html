@@ -1,0 +1,25 @@
+<template name='orderDetail'>
+  <!-- use helper to dynamically render the following list -->
+  <div class="card">
+    <div class="card-content">
+      <div class="list media-list">
+        <ul>
+          {{# each orderDetail }}
+          <li class="item-content">
+            <div class="item-media" style="vertical-align: middle; display:inline-block;">
+              <img src={{dishData.imageUrl}} width="44" style="height: 50px; width:50px; border-radius: 5px;" />
+            </div>
+            <div class="item-inner" style="vertical-align:middle; width:73%; display:inline-block;">
+              <div class="item-title-row">
+                <div class="item-title float-left">{{dishData.name}}</div>
+                <div class="item-title float-right">${{dishData.price}}</div>
+              </div>
+              <div class="item-subtitle">x {{quantity}}</div>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

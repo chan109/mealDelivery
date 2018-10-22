@@ -1,0 +1,80 @@
+<template name='adminAllOrder'>
+  <div class="card">
+    <div class="card-header card-header-primary card-header-icon">
+      <div class="card-icon">
+        <i class="material-icons">assignment</i>
+      </div>
+      <h4 class="card-title">订单列表</h4>
+    </div>
+    <div class="card-body">
+      <div class="toolbar">
+        <div class="row">
+          <select class="form-control" id="riderSelect" style="width:50%">
+            <option disabled selected>选择送餐员</option>
+            {{#each riders}}
+            <option id='normal-user' value="{{_id}}">{{phone.number}}</option>
+            {{/each}}
+          </select>
+          <div class="btn btn-success" id="assignOrder">分配</div>
+        </div>
+        <div class="row">
+          <div class="btn-group">
+            <div class="btn btn-info orderStatusBtn">全部</div>
+            <div value="已下单" class="btn btn-info orderStatusBtn">已下单</div>
+            <div value="派送中" class="btn btn-info orderStatusBtn">派送中</div>
+            <div value="已派送" class="btn btn-info orderStatusBtn">已派送</div>
+            <div value="已取消" class="btn btn-info orderStatusBtn">已取消</div>
+          </div>
+        </div>
+      </div>
+      <div class="material-datatables">
+        <table id="regionOrdersTable" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+          <thead>
+            <tr>
+              <th>选择</th>
+              <th>订单号码</th>
+              <th>总价</th>
+              <th>邮编</th>
+              <th>地址</th>
+              <th>用户电话</th>
+              <th>状态</th>
+              <th>下单时间</th>
+              <th>详情</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each orders}}
+            <tr>
+              <td>
+                {{#if isPaid}}
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input value="{{_id}}" class="form-check-input selectOrderCheckbox" type="checkbox">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+                {{/if}}
+              </td>
+              <td>{{orderNumber}}</td>
+              <td>${{paidAmount}}</td>
+              <td>{{address.postCode}}</td>
+              <td id='displayAddressHelper'>{{address.name}}</td>
+              <td>{{orderPhone}}</td>
+              <td>{{status}}</td>
+              <td>{{orderedDate}}</td>
+              <td class="td-actions">
+                <div data-toggle='modal' data-target="#adminShowOrderDetail" class="viewOrder btn btn-info">
+                  <i class="material-icons">info</i>
+                </div>
+              </td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {{>adminShowOrderDetail}}
+</template>

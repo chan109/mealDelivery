@@ -1,0 +1,25 @@
+<template name='riderOrderHeader'>
+    <div class="navbar">
+        <div class="navbar-inner sliding navBar-list">
+            <div class="left goBack">
+                <a href="#" class="link">
+                    <i class="material-icons">
+                        arrow_back
+                    </i>
+                </a>
+            </div>
+            <ul class="riderOrderHeader">
+                <li class="new-order selectedRiderOrder">
+                    <a href="#">新订单</a>
+                    <div class="quantity-hightlight">{{newOrderAmount}}</div>
+                </li>
+
+                <li class="completed-order">
+                    <a href="#">已处理</a>
+                    <div class="quantity-hightlight">{{completedOderAmount}}</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</template>

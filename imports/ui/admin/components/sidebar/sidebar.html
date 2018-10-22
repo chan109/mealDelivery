@@ -1,0 +1,69 @@
+<template name="adminSidebar">
+  <div class="sidebar" data-background-color="black" data-image="/img/sidebar-1.jpg">
+    <div class="logo">
+      <a href="/admin/dashboard" class="simple-text logo-mini">
+        CT
+      </a>
+      <a href="/admin/dashboard" class="simple-text logo-normal">
+        食在
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <div class="user">
+        <div class="photo">
+          <img src="/img/default-avatar.png" />
+        </div>
+        <div class="user-info">
+          <a data-toggle="collapse" href="#collapseExample" class="username">
+            <span>
+              管理员
+              <b class="caret"></b>
+            </span>
+          </a>
+          <div class="collapse" id="collapseExample">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" id="logoutBtn">
+                  <i class="material-icons">exit_to_app</i>
+                  <span class="sidebar-normal">登出</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul class="nav">
+        <li class="nav-item ">
+          <a class="nav-link" id='dashboard' href='#'>
+            <i class="material-icons">dashboard</i>
+            <p> 区域管理 </p>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" id='order' href='#'>
+            <i class="material-icons">event_note</i>
+            <p> 订单管理 </p>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" id='menu' href='#'>
+            <i class="material-icons">restaurant_menu</i>
+            <p> 菜品管理 </p>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" id='user' href='#'>
+            <i class="material-icons">group</i>
+            <p> 用户管理 </p>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" id='coupon' href='#'>
+            <i class="material-icons">list</i>
+            <p> 优惠券管理 </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>

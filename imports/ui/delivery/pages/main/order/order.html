@@ -1,0 +1,16 @@
+<template name="order">
+  <div class="page" data-name="home">
+    <div class="page-content" style="overflow: scroll;">
+      <form>
+        {{> customer}}
+        {{> orderDetail}}
+        {{> couponSection}}
+        {{> expectedDate}}
+        {{> tipSection}}
+        {{> orderDetailFinal}}
+        {{> paymentMethod}}
+        <button type="submit" class="button button-fill color-red submit">提交订单</button>
+      </form>  
+    </div>
+  </div>
+</template>
